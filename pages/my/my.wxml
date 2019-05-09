@@ -1,0 +1,21 @@
+<view class="container">
+    <view class="title">
+        我的订单
+    </view>
+    <view class="myOrder">
+        <view class="tab-header">
+            <view class="li">编号</view>
+            <view class="li">鲜果</view>
+            <view class="li">下单时间</view>
+            <view class="li">联系人</view>
+        </view>
+        <view class="tab-body" wx:for="{{lists}}">
+            <view class="li">{{item.oid}}</view>
+            <navigator class="li" url="../detail/detail?id={{item.did}}" >
+                <image src="https://localhost/server/images/{{item.img_sm}}"></image>
+            </navigator>
+            <view class="li3">{{item.order_time}}</view>
+            <view class="li4">{{item.user_name}}</view>
+        </view>
+    </view>
+</view>

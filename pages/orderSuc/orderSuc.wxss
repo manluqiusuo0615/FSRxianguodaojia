@@ -1,0 +1,12 @@
+.container{
+    padding:10rpx;
+}
+.container .order-suc{
+    padding:10rpx;
+    color:rgba(72,194,61,0.7);
+    font-weight:bold;
+    border-radius:10rpx;
+    line-height:75rpx;
+    font-family:"SimHei";
+    margin-top:30rpx;
+}
